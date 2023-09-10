@@ -14,7 +14,7 @@ export default class RoomProvider extends Component {
     type: "all",
     capacity: 1,
     price: 0,
-    minPrice: 0,
+    minPrice:0,
     maxPrice: 0,
     minSize: 0,
     maxSize: 0,
@@ -117,7 +117,7 @@ export default class RoomProvider extends Component {
       tempRooms = tempRooms.filter(room => room.type === type);
     }
     // filter by capacity
-    if (capacity !== 1) {
+    if (capacity !== 3) {
       tempRooms = tempRooms.filter(room => room.capacity >= capacity);
     }
     // filter by price

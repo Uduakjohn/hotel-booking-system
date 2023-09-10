@@ -5,10 +5,12 @@ import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
 import SingleRoom from "./pages/SingleRoom";
 import Error from "./pages/Error";
+//import footer from "./components/Footer";
 
 import Navbar from "./components/Navbar";
 
 import { Switch, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route component={Error} />
       </Switch>
+      {/* <Footer/> */}
+      {/* <footer/> */}
     </>
   );
 }

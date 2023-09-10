@@ -10,10 +10,10 @@ const home = () => {
       <Hero>
         <Banner
           title="luxurious rooms"
-          subtitle="deluxe rooms starting at $299"
+          subtitle="deluxe rooms starting at N50,000 0nly"
         >
           <Link to="/rooms" className="btn-primary">
-            our rooms
+            Check out our rooms
           </Link>
         </Banner>
       </Hero>

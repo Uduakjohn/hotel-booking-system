@@ -27,7 +27,7 @@ export default class SingleRoom extends Component {
     if (!room) {
       return (
         <div className="error">
-          <h3> no such room could be found...</h3>
+          <h3> Kindly check other rooms we dont have this  room currently available...</h3>
           <Link to="/rooms" className="btn-primary">
             back to rooms
           </Link>
@@ -70,11 +70,11 @@ export default class SingleRoom extends Component {
             </article>
             <article className="info">
               <h3>info</h3>
-              <h6>price : ${price}</h6>
+              <h6>price : N{price.toLocaleString()}</h6>
               <h6>size : {size} SQFT</h6>
               <h6>
                 max capacity :
-                {capacity > 1 ? `${capacity} people` : `${capacity} person`}
+                {capacity > 3 ? `${capacity} people` : `${capacity} person`}
               </h6>
               <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
               <h6>{breakfast && "free breakfast included"}</h6>
@@ -88,6 +88,10 @@ export default class SingleRoom extends Component {
               <li key={index}>- {item}</li>
             ))}
           </ul>
+          <button   className="border-5 border-slate-500 py-4 px-2 placeholder-slate-600 text-slate-800 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 w-full rounded outline-none text-lg"
+         style={{background:'purple', cursor:"pointer",textDecorationColor:'white'}} >
+              Proceed to pay for the room
+            </button>
         </section>
       </>
     );
